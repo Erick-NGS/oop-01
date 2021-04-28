@@ -1,3 +1,10 @@
+class Product {
+  title;
+  imageUrl;
+  description;
+  price;
+}
+
 const productsList = {
   products: [
     {
@@ -27,7 +34,7 @@ const productsList = {
       prodEl.innerHTML = `
         <div>
           <img src="${prod.imageUrl}" alt="${prod.title}">
-          <div class="product-item__constent">
+          <div class="product-item__content">
             <h2>${prod.title}</h2>
             <h3>\$${prod.price}</h3>
             <p>${prod.description}</p>
